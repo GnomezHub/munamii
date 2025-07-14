@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* Anpassade färger baserade på logotypen*/
+:root {
+  --brown: #5c3a21; /* Från "Munamii" texten */
+  --color-teal: #36a79c; /* Från "cakery" texten och cupcake */
+  --color-pink: #e972b7; /* Från hjärtat */
+  --color-light-blue: #a7d8e2; /* Ljusblå från cupcake */
+}
+/* Anpassade typsnittsklasser för Tailwind */
+.font-munamii {
+  font-family: "Comfortaa", cursive; /* Ett typsnitt som liknar "Munamii" */
+}
+.font-cakery {
+  font-family: "Pacifico", cursive;
+  /*font-family: 'Dancing Script', cursive; Ett typsnitt som liknar "cakery" */
+}
+/* Använd Inter font för en modern känsla */
+body {
+  /* font-family: "Poppins", sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8; /* Lätt bakgrundsfärg */
+}
+
+.home {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: var(--color-brown);
+  font-family: "Pacifico", "Cursive", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+/* Anpassad styling för navigeringslänkar */
+.nav-link {
+  color: var(--color-brown); /* Standard textfärg */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem; /* Rundade hörn */
+  transition: all 0.3s ease; /* Mjuk övergång */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: var(--color-teal); /* Bakgrundsfärg vid hover */
+  color: white; /* Vit text vid hover */
+}
+
+/* Aktiv länk */
+.nav-link.active {
+  background-color: var(--color-pink); /* Rosa bakgrund för aktiv länk */
+  color: white;
+}
+
+/* Responsiv bild för logotypen */
+.logo-img {
+  max-width: 150px; /* Maxbredd för logotypen */
+  height: auto; /* Bibehåll proportioner */
+}
+
+/* Centrera innehåll */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
