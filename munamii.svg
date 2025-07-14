@@ -1,0 +1,12 @@
+<svg width="100" height="150" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cupcake Wrapper -->
+  <rect x="20" y="80" width="60" height="40" fill="#4A90E2" />
+  <path d="M25 80 V120 M35 80 V120 M45 80 V120 M55 80 V120 M65 80 V120 M75 80 V120" stroke="#8B4513" stroke-width="2"/>
+
+  <!-- Frosting -->
+  <path d="M50 80 C30 70, 30 50, 50 50 C70 50, 70 70, 50 80 Z" fill="#40E0D0"/>
+
+  <!-- Heart Decoration -->
+  <line x1="50" y1="40" x2="50" y2="50" stroke="#8B4513" stroke-width="2"/>
+  <path d="M47 40 C47 37, 50 37, 50 40 C50 37, 53 37, 53 40 C53 43, 50 46, 47 40 Z" fill="#FF69B4"/>
+</svg>
