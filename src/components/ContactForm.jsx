@@ -19,17 +19,13 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setError(false);
 
-    // Netlify requires form-name in the payload
-    const data = {
-      "form-name": "contact",
-      ...formData,
-    };
+    // Skapar en FormData-objekt
+    const data = new FormData(e.target);
 
     try {
       const response = await fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(data).toString(),
+        body: data,
       });
 
       if (response.ok) {
