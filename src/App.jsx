@@ -16,23 +16,19 @@ function App() {
   const [currentPage, setCurrentPage] = useState("home"); // Default to 'home' page
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-pink-100 bg-[url('../assets/bg.png')] bg-repeat">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
-      <main className="flex-grow text-gray-800 m-6">
-        
-        <div className="container p-6 my-8 bg-white rounded-xl shadow-lg">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/products/*" element={<Products />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NoPage />} />
-          </Routes>
-        </div>
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/*" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+
       <Footer />
     </div>
   );

@@ -9,5 +9,8 @@ export default defineConfig({
     tailwindcss()
   ]
     ,
-   base: "/munamii",
+       server: {
+    host: true, // Allows access from other devices on the network
+ },
+ //  base: "/munamii/",
 })

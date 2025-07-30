@@ -6,9 +6,9 @@ import { Mail, Instagram, Facebook } from "lucide-react";
 // This component displays social media links and contact email.
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-teal-500 to-blue-400 text-white shadow-inner rounded-t-xl mt-8">
+    <footer className="bg-gradient-to-r from-cyan-500 to-sky-300 text-white shadow-inner rounded-t-3xl lg:mx-6 ">
       {/* <footer className="bg-gradient-to-r from-[var(--color-teal)] to-[var(--color-light-blue)] text-white shadow-inner rounded-t-xl mt-8"> */}
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center">
+      <div className="container p-6 mx-auto flex flex-col md:flex-row justify-between items-center text-center">
         {/* Copyright Information */}
         <p className="text-sm mb-4 md:mb-0">
           &copy; {new Date().getFullYear()} Munamii Cakery. All rights reserved.

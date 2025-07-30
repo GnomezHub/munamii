@@ -1,9 +1,10 @@
-import React from 'react'
-import Header from '../components/Header'
 export default function NoPage() {
   return (
-    <div>
-
-        <h1>Error no page found</h1>NoPage</div>
-  )
+    <main className="flex-grow text-gray-800 m-6">
+      <div className="container p-6 my-8 bg-white rounded-xl shadow-lg">
+        <h1>Error no page found</h1>
+        <p>404 haha</p>
+      </div>
+    </main>
+  );
 }

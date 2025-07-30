@@ -5,7 +5,7 @@ export const CUPCAKE_PRODUCTS = [
     id: 1,
     name: "Chocolate Minty Dream",
     price: "35 kr",
-    image: "./munamii/assets/cupcakes/chocolate_mint_cupcake.jpg",
+    image: "./assets/cupcakes/chocolate_mint_cupcake.jpg",
   },
   {
     id: 2,
