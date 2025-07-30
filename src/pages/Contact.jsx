@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
   return (
@@ -21,6 +21,14 @@ export default function Contact() {
               processing and availability.
               <p>Tuesday to Saturday 9 a.m. at 2 p.m.</p>
             </p>
+            <br />
+            <p>
+              For any questions, please fill out the form below and we will get
+              back to you as soon as possible.
+            </p>
+            <br></br>
+            <br></br>
+            <ContactForm />
           </div>
         </div>
       </div>
