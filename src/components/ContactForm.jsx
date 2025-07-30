@@ -35,6 +35,7 @@ export default function ContactForm() {
         setError(true);
       }
     } catch (err) {
+      console.log("Error submitting form:", err);
       setError(true);
     } finally {
       setIsSubmitting(false);
