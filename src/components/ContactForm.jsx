@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Success from "../pages/Success";
+
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -19,16 +19,22 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setError(false);
 
+    // Netlify requires form-name in the payload
+    const data = {
+      "form-name": "contact",
+      ...formData,
+    };
+
     try {
       const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
+        body: new URLSearchParams(data).toString(),
       });
 
       if (response.ok) {
         setSuccess(true);
-        setFormData({ name: "", email: "", message: "" }); // Clear the form
+        setFormData({ name: "", email: "", message: "" });
       } else {
         setError(true);
       }
@@ -40,7 +46,12 @@ export default function ContactForm() {
   };
 
   return (
-    <form name="contact" method="POST" action="/Success" data-netlify="true">
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      onSubmit={handleSubmit}
+    >
       <input type="hidden" name="form-name" value="contact" />
       <p>
         <label htmlFor="yourname">Your Name:</label> <br />
@@ -48,8 +59,8 @@ export default function ContactForm() {
           type="text"
           name="name"
           id="yourname"
-          //   value={formData.name}
-          //   onChange={handleChange}
+          value={formData.name}
+          onChange={handleChange}
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
         />
       </p>
@@ -59,8 +70,8 @@ export default function ContactForm() {
           type="email"
           name="email"
           id="youremail"
-          //   value={formData.email}
-          //   onChange={handleChange}
+          value={formData.email}
+          onChange={handleChange}
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
         />
       </p>
@@ -69,15 +80,15 @@ export default function ContactForm() {
         <textarea
           name="message"
           id="yourmessage"
-          //   value={formData.message}
-          //   onChange={handleChange}
+          value={formData.message}
+          onChange={handleChange}
           className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
         ></textarea>
       </p>
       <p>
         <button
           type="submit"
-          //disabled={isSubmitting}
+          disabled={isSubmitting}
           className="float-right px-1 md:px-2 my-4 py-0 m-2 rounded-full ring-2 transition-all duration-300 ease-in-out          
                           :text-amber-900 hover:bg-teal-100 hover:text-teal-600 hover:shadow-lg hover:scale-105                     
                       focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
