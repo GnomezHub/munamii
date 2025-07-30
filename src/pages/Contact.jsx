@@ -26,9 +26,9 @@ export default function Contact() {
               For any questions, please fill out the form below and we will get
               back to you as soon as possible.
             </p>
-            <br></br>
-            <br></br>
-            <ContactForm />
+            <div className="my-12">
+              <ContactForm />
+            </div>
           </div>
         </div>
       </div>
