@@ -16,6 +16,23 @@
   /* font-family: "Dancing Script", cursive;  */
 }
 
+.diagonal-stripes {
+  /* repeating-linear-gradient skapar ett mönster av ränder.
+              - 45deg: Vinkeln på ränderna. Du kan ändra detta värde (t.ex. 135deg).
+              - #6b7280: Färgen på randen (en grå färg).
+              - #6b7280 10px: Remsan är 10 pixlar bred.
+              - transparent 10px: Mellanrummet börjar direkt efter randen.
+              - transparent 20px: Mellanrummet är 10 pixlar brett (från 10px till 20px).
+              Mönstret upprepas sedan.
+            */
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-light-blue),
+    var(--color-light-blue) 4px,
+    transparent 4px,
+    transparent 6px
+  );
+}
 body {
   /* margin: 0;
   padding: 0;

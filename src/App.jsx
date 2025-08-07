@@ -16,7 +16,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState("home"); // Default to 'home' page
 
   return (
-    <div className="flex flex-col min-h-screen bg-pink-100 bg-[url('../assets/bg.png')] bg-repeat">
+    <div className="flex flex-col min-h-screen bg-pink-100 bg-[url('../assets/bg.png')] bg-repeat bg-fixed">
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
 
       <Routes>

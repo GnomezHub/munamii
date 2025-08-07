@@ -4,7 +4,7 @@ import ContactForm from "../components/ContactForm";
 export default function Contact() {
   return (
     <main className="flex-grow text-gray-800 m-6">
-      <div className="container max-w-4xl mx-auto p-2 my-6 bg-teal-50 rounded-3xl shadow-xl">
+      <div className="container max-w-4xl mx-auto p-2 my-6 bg-teal-50 diagonal-stripes rounded-3xl shadow-xl">
         <div className="rounded-2xl p-2 mx-0 my-4 shadow-lg border bg-white border-gray-200 pt-4">
           <h2 className="text-teal-600 font-cakery text-4xl text-center mb-6">
             Contact Us
@@ -22,11 +22,12 @@ export default function Contact() {
               <p>Tuesday to Saturday 9 a.m. at 2 p.m.</p>
             </p>
             <br />
+            <br />
             <p>
               For any questions, please fill out the form below and we will get
               back to you as soon as possible.
             </p>
-            <div className="my-12">
+            <div className="my-8">
               <ContactForm />
             </div>
           </div>

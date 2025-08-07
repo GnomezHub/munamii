@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <main className="flex-grow text-gray-800 m-4">
-      <div className="container max-w-4xl mx-auto p-2 my-6 bg-teal-50 rounded-3xl shadow-xl">
+      <div className="container max-w-4xl mx-auto p-2 my-6  bg-teal-50 diagonal-stripes rounded-3xl shadow-xl">
                 <img
           src="./assets/munamii.png"
           alt="Munamii Cakery Logo"

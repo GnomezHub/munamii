@@ -10,7 +10,7 @@ const Footer = () => {
       {/* <footer className="bg-gradient-to-r from-[var(--color-teal)] to-[var(--color-light-blue)] text-white shadow-inner rounded-t-xl mt-8"> */}
       <div className="container p-6 mx-auto flex flex-col md:flex-row justify-between items-center text-center">
         {/* Copyright Information */}
-        <p className="text-sm mb-4 md:mb-0">
+        <p className=" font-munamii text-sm mb-4 md:mb-0">
           &copy; {new Date().getFullYear()} Munamii Cakery. All rights reserved.
         </p>
 
