@@ -89,7 +89,7 @@ export default function ContactForm() {
           type="submit"
           disabled={isSubmitting}
           //className="text-right inline-flex items-center justify-center cursor-pointer bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
-          className="font-bold font-munamii px-4 py-2 my-4 m-2 rounded-full ring-2 transition-all duration-300 ease-in-out          
+          className="font-bold font-munamii px-4 py-2 my-4 m-2 rounded-full ring-2 transition-all duration-300 ease-in-out cursor-pointer          
                         text-amber-900 hover:bg-teal-100 hover:text-teal-600 hover:shadow-lg hover:scale-105"
         >
           {isSubmitting ? "Sending..." : "Send"}

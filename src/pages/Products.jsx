@@ -13,7 +13,7 @@ const Products = () => {
 
   return (
     <main className="flex-grow text-gray-800 my-6 mx-2 md:mx-6">
-      <div className="container max-w-6xl mx-auto p-6 my-6 bg-teal-50 diagonal-stripes rounded-3xl shadow-xl">
+      <div className="container max-w-6xl mx-auto p-2 md:p-6 my-4 bg-teal-50 diagonal-stripes rounded-3xl shadow-xl">
         <h2 className="text-amber-900 font-cakery text-4xl text-center mb-6">
           Our Products
         </h2>
@@ -21,27 +21,29 @@ const Products = () => {
         <div className="flex justify-center mb-8 gap-6">
           <button
             onClick={() => setProductType("cupcakes")}
-            className={`flex items-center px-4 py-3 rounded-full text-lg font-medium transition-all duration-300
+            className={`flex items-center px-3 py-2 rounded-full text-lg font-medium transition-all duration-300 cursor-pointer
             ${
               productType === "cupcakes"
                 ? "bg-pink-400 text-white shadow-lg scale-110"
                 : "bg-white text-gray-700 hover:bg-pink-100 hover:text-pink-600 ring-2 hover:ring-4  hover:ring-amber-900"
             }
-            focus:outline-none focus:ring-4 focus:ring-teal-300 focus:ring-opacity-50`}
+            `}
+           // focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-opacity-50`}
           >
-            <Dessert className="mr-2" size={24} /> Cupcakes
+            <Dessert className="mr-2" size={26} /> Cupcakes
           </button>
           <button
             onClick={() => setProductType("weddingCakes")}
-            className={`flex items-center px-3 py-2 rounded-full text-lg font-medium transition-all duration-300
+            className={`flex items-center px-3 py-2 rounded-full text-lg font-medium transition-all duration-300 cursor-pointer
             ${
               productType === "weddingCakes"
                 ? "bg-blue-400 text-white shadow-lg scale-110"
                 : "bg-white text-gray-700 hover:bg-teal-100 hover:text-teal-600 ring-2 hover:ring-4 hover:ring-amber-900"
             }
-            focus:outline-none focus:ring-4 focus:ring-teal-300 focus:ring-opacity-50`}
+           `}
+            // focus:outline-none focus:ring-2 focus:ring-teal-300 focus:ring-opacity-50`}
           >
-            <Cake className="mr-2" size={24} /> Wedding Cakes
+            <Cake className="mr-2" size={28} /> Wedding Cakes
           </button>
         </div>
 

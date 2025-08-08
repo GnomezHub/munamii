@@ -3,9 +3,9 @@ import Header from "../components/Header";
 
 export default function About() {
   return (
-    <main className="flex-grow text-gray-800 m-4">
-      <div className="container max-w-4xl mx-auto p-2 my-6 bg-teal-50 diagonal-stripes rounded-3xl shadow-xl">
-        <div className="rounded-2xl p-2 mx-0 my-4 shadow-lg border bg-white border-gray-200 pt-4">
+    <main className="flex-grow text-gray-800 m-2 mt-4">
+      <div className="container max-w-4xl mx-auto p-2 pt-8 md:px-6 my-6 bg-teal-50 diagonal-stripes rounded-3xl shadow-xl">
+        <div className="rounded-2xl p-4 mx-0 my-4 shadow-lg border bg-white border-gray-200 pt-4">
           <h2 className="text-teal-600 font-cakery text-4xl text-center mb-2">
             About Us
           </h2>
