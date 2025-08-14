@@ -1,17 +1,16 @@
 # 🪄 munamii
 
-Ett stilrent och snabbt webbprojekt byggt med React och Vite – designat för flexibilitet och modern utveckling.
-
+Ett fiktivt bagery, frontend uppgift. De säljer cupcakes och bröllopstårtor så jag ville att designen skulle ge en kaktårtig känsla
 ## ✨ Översikt
 
-**munamii** är ett minimalt React-projekt som använder Vite som byggverktyg. Projektet kommer med ESLint-konfiguration och stöd för snabb uppdatering med HMR (Hot Module Replacement).
+**munamii** är ett React-projekt som använder Vite som byggverktyg. Bakgrunden ville jag ha kakig i färger och känsla med lite frosting på. De blå tonerna ska kännas som glasyr. 
 
 ## ⚙️ Teknologier
 
 - ⚛️ React
 - ⚡ Vite
 - 📏 ESLint
-- 🖌️ HTML & CSS
+- 🖌️ HTML & Tailwind CSS
 
 ## 📁 Struktur
 
