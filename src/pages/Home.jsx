@@ -21,7 +21,9 @@ export default function Home() {
             We are a small business based in Sweden. We offer you the most
             delicious cakes and cupcakes for all kinds of events and
             celebrations. Browse around to discover what you would like to buy.
+            <br /> Don't just accept our cookies. BUY THEM AND EAT THEM!
           </p>
+        
           
           <img
             src="./assets/facecakes.jpg"
